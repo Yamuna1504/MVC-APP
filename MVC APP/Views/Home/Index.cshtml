@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    
+    <script>
+    function submit(){
+           alert("submit")
+       }
+function reset() {
+    document.getElementById("name").value = ""
+    document.getElementById("pwd").value = ""
+}
+       </script>
+<label>Name</label>
+<input type="text" id="name" name="Name" placeholder="Enter your name"><br /><br />
+<label>Password</label>
+<input type="password" id="pwd" name="pwd" placeholder="Enter your password"><br /><br />
+<br /><br />
+<input type="submit" value="Submit" onclick="submit()">
+<input type="submit" value="Reset" onclick="reset()">
+<br /><br />
+<a href="/Home/Signup.html">Havent yet registered sign up here</a>
+
+
+</div>
+
